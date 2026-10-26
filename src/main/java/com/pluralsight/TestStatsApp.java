@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.Arrays;
+
 public class TestStatsApp {
     public static void main(String[] args) {
 
@@ -13,15 +15,16 @@ public class TestStatsApp {
         }
 
         // finds the average the scores.
-        double average = (sum/scores.length);
+        double average = (sum / scores.length);
         System.out.println(average);
+        System.out.println("");
 
-        //high test score
-        
 
-        //low test score
+        Arrays.sort(scores); //sorts the array lowest to highest.
 
-        //
+        System.out.println("The lowest number is : " + scores[0]);//sout the lowest score
+
+        System.out.println("The highest number is: " + scores[9]);//sout the highest score.
 
     }
 }
